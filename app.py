@@ -39,7 +39,8 @@ def predict():
             
     return render_template('index.html', prediction_text='NLP Model  has predicted about the text : {}'.format(result))
 
-app.run()
+if __name__=="__main__":
+  app.run(debug=True)
 
 
 
